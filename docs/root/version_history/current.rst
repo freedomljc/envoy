@@ -54,6 +54,7 @@ Bug Fixes
   specified for UDP listeners if concurrency is > 1. This previously crashed so is considered a
   bug fix.
 * upstream: fixed a bug where Envoy would panic when receiving a GRPC SERVICE_UNKNOWN status on the health check.
+* fault: fixed an issue with `active_faults` gauge not being decremented for when abort faults were injected.
 
 Removed Config or Runtime
 -------------------------
